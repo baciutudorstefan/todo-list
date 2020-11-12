@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background: #ffc857;
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
 }
 header {
@@ -25,16 +25,23 @@ form button {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
-  background: white;
+  background: #1f2041;
+
+  color: #119da4;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
 }
 form button {
   color: #ff6f47;
-  background: #f7fffe;
+  background: #1f2041;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #ff6f47;
+  background: #1f2041;
   color: white;
 }
 .todo-container {
@@ -50,9 +57,9 @@ form button:hover {
 
 .todo {
   margin: 0.5rem;
-  background: white;
+  background: #4b3f72;
   font-size: 1.5rem;
-  color: black;
+  color: #119da4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,9 +72,12 @@ form button:hover {
   flex: 1;
 }
 
+.trash-btn {
+  background: #fe938c !important;
+}
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
+  background: #119da4;
   color: white;
   border: none;
   padding: 1rem;
@@ -75,7 +85,7 @@ form button:hover {
   font-size: 1rem;
 }
 .complete-btn {
-  background: rgb(11, 212, 162);
+  background: #119da4;
 }
 .todo-item {
   padding: 0rem 0.5rem;
@@ -84,6 +94,10 @@ form button:hover {
 .fa-trash,
 .fa-check {
   pointer-events: none;
+}
+
+.fa-plus-square {
+  color: #119da4;
 }
 
 .fall {
@@ -96,38 +110,41 @@ form button:hover {
   opacity: 0.5;
 }
 
-/*CUSTOM SELECTOR */
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
+  background: #1f2041;
   outline: 0;
   box-shadow: none;
   border: 0 !important;
   background-image: none;
 }
 
-/* Custom Select */
 .select {
   margin: 1rem;
   position: relative;
   overflow: hidden;
 }
 select {
-  color: #ff6f47;
-  font-family: "Poppins", sans-serif;
+  color: #119da4;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   width: 12rem;
 }
-/* Arrow */
+
 .select::after {
   content: "\25BC";
   position: absolute;
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #ff6f47;
+  background: #119da4;
   cursor: pointer;
   pointer-events: none;
+}
+
+header {
+  color: #119da4;
 }
